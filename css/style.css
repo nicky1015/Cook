@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 글씨체 */
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+h1,h2,h3,h4,.gugi-font{
+    font-family: 'Gugi', sans-serif;
+}
+
+/* 네비게이션영역 */
+.nav-link:hover,    /*마우스 갖다대면 색변환*/
+.nav-link.active{    /*호버시 변환된 색 유지*/
+    color: darkgoldenrod !important;
+    
+}
+
+
+/* 헤더영역 */
+header{
+    background-image: linear-gradient(to top,rgba(0, 0, 0,0.8),rgba(0,0,0,0.2)),url("../images/main-bg.jpg");   /*linear 화면 살짝 어둡게효과 주는거(top에), 배경 2개의 색으로, rgba : 투명도 , */
+    background-size: cover;    /* 배경화면그림 꽉 채우는거 */
+    background-position: center top;  /*배경화면그림 위치조정*/
+    background-attachment: fixed;    
+    /*뷰포트에 딱 붙이는거 */
+}
+
+/* 서비스 영역 */
+.card-hover:hover{
+    background-color: #ffc10726;
+    cursor: pointer;
+}
+
+
+
+
+/* SNS영역 */
+#sns-links{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(../images/sns-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* News영역 */
+#News{
+    background-image: linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(../images/news-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* @media (min-width:768px) and (max-width:1024px){
+    .text{
+        font-size: 15px;
+    }
+} */
+
+
+
